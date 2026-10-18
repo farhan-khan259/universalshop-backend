@@ -1,0 +1,39 @@
+{
+  "name": "shop-os-api",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node api.js && node --watch server.js",
+    "start": "node api.js && node server.js",
+    "seed": "node src/seed.js",
+    "test": "node --test tests/*.test.js",
+    "test:browser": "node tests/browser.mjs"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "csv-parse": "^7.0.3",
+    "decimal.js": "^10.6.0",
+    "dotenv": "^17.2.3",
+    "exceljs": "^4.4.0",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.19.0",
+    "multer": "^2.0.2",
+    "pino": "^9.14.0",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^10.2.1",
+    "playwright": "^1.56.1",
+    "supertest": "^7.1.4"
+  },
+  "overrides": {
+    "exceljs": {
+      "uuid": "^11.1.1"
+    }
+  }
+}
